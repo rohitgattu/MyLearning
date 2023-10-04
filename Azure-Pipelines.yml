@@ -5,4 +5,4 @@ stages:
 - stage: BuildApp
   displayName: Build Apps
   jobs:
-    -job: Echo BuildApp
+  -job: Echo BuildApp

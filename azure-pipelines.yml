@@ -11,6 +11,10 @@ pool:
 
 stages:
 - stage: Test
+jobs:
+  -job:Test
+    Steps:
+      -script: echo deploying test
 
 - stage: DeployUS1
   dependsOn: Test    # this stage runs after Test

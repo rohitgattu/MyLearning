@@ -1,8 +1,6 @@
-trigger:
-- main
+pool:
+  vmimage: ubuntu-latest
 
-stages:
-- stage: BuildApp
-  displayName: Build Apps
-  jobs:
-  -job: Echo BuildApp
+Steps:
+- script:
+    echo "hello world!"
